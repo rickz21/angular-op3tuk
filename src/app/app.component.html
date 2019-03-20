@@ -1,0 +1,23 @@
+<canvas #canvas  (touchstart)="prevent($event)" (contextmenu)="prevent($event)" draggable="false"
+    (dragstart)="prevent($event)"></canvas>&nbsp;
+<img [src]="dataURL | async" width="200"  height="100">
+<br /><br />
+<button type="button" style="background-color:black;color:white" (click)="color='black'">Black</button>
+<button type="button" style="background-color:red;color:white" (click)="color='red'">Red</button>
+<button type="button" style="background-color:green;color:white" (click)="color='green'">Green</button>
+<button type="button" style="background-color:blue;color:white" (click)="color='blue'">Blue</button>
+<button type="button" style="background-color:yellow" (click)="color='yellow'">Yellow</button>
+<button type="button" style="background-color:brown" (click)="color='brown'">Brown</button>
+<button type="button" style="background-color:white" (click)="color='white'">White-Eraser</button>
+<br /><br />	
+<button type="button" (click)="clear()">Clear Canvas</button>
+&nbsp;&nbsp; Line Width
+<button type="button" (click)="setLineWidth(1)">1</button>&nbsp;
+<button type="button" (click)="setLineWidth(2)">2</button>&nbsp;
+<button type="button" (click)="setLineWidth(5)">5</button>&nbsp;
+<button type="button" (click)="setLineWidth(10)">10</button>&nbsp;
+<button type="button" (click)="setLineWidth(30)">30</button>&nbsp;&nbsp;&nbsp;
+
+
+
+
